@@ -31,4 +31,9 @@ section
     font-size: 3em;
     text-align: center;
     width: 100%;
+    
+}
+#color 
+{
+    background-image: linear-gradient(to right, red, yellow);
 }
