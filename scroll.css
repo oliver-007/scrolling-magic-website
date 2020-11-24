@@ -20,8 +20,12 @@ section
 {
     position: relative;
     margin-top: 200vh;
-    background: #FFFFFF;
+    background: black;
     padding: 50px 0px;
+}
+.container h3
+{
+    color: red;
 }
 .title
 {
@@ -73,7 +77,7 @@ section
 }
 
 /* navbar styling */
-.navbar
+/* .navbar
 {
     position: sticky;
     top: 0; 
@@ -148,4 +152,98 @@ section
 {
     width: 50%;
     transform: translateX(-100%);
+} */
+nav
+{
+    position: sticky;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: 0.6s;
+    padding: 10px 100px 40px;
+}
+nav .logo
+{
+    position: relative;
+    font-weight: 700;
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 2em;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    transition: 0.6s;
+}
+nav ul
+{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+nav ul li
+{
+    position: relative;
+    list-style: none;
+}
+nav ul li a
+{
+    position: relative;
+    margin: 0 20px;
+    padding: 5px 10px;
+    text-decoration: none;
+    color: #fff;
+    letter-spacing: 2px;
+    font-weight: 900;
+    transition: 0.6s;
+}
+nav ul li a::before
+{
+    content: "";
+    width: 0px;
+    height: 3px;
+    background: #f0f;
+    position: absolute;
+    top: 120%;
+    left: 0;
+    transition: .5s;
+    mix-blend-mode: multiply;
+}
+nav ul li a::after
+{
+    content: "";
+    width: 0px;
+    height: 3px;
+    background: #03A9F4;
+    position: absolute;
+    top: 120%;
+    right: 0;
+    transition: .5s;
+    mix-blend-mode: multiply;
+}
+nav ul li:hover a::before
+{
+    width: 50%;
+    transform: translateX(100%);
+}
+nav ul li:hover a::after
+{
+    width: 50%;
+    transform: translateX(-100%);
+}
+nav.sticky
+{
+    padding: 15px 100px;
+    background: #fff;
+}
+nav.sticky .logo
+{
+    color: #000;
+}
+nav.sticky ul li a
+{
+    color: #000;
+    font-weight: 900;
 }
