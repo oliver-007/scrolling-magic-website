@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap');
+
+
 * 
 {
     margin: 0;
@@ -32,12 +35,11 @@ section
     position: absolute;
     top: 250px;
     z-index: 1;
-    font-size: 3em;
+    font-size: 5em;
     text-align: center;
     width: 100%;
     display: inline;
-    font-family: sans-serif;
-    
+    font-family: 'Dancing Script', cursive;
 }
 #color 
 {
