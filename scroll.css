@@ -77,15 +77,20 @@ section
 }
 nav
 {
-    position: sticky;
-    top: 0;
-    left: 0;
+    position: relative;
     width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
     transition: 0.6s;
     padding: 10px 100px 40px;
+}
+nav.sticky
+{
+    position: sticky;
+    top: 0;
+    padding: 15px 100px;
+    background: #fff;
 }
 nav .logo
 {
@@ -97,6 +102,10 @@ nav .logo
     text-transform: uppercase;
     letter-spacing: 2px;
     transition: 0.6s;
+}
+nav.sticky .logo
+{
+    color: #000;
 }
 nav ul
 {
@@ -120,6 +129,11 @@ nav ul li a
     letter-spacing: 2px;
     font-weight: 900;
     transition: 0.6s;
+}
+nav.sticky ul li a
+{
+    color: #000;
+    font-weight: 900;
 }
 nav ul li a::before
 {
@@ -154,18 +168,4 @@ nav ul li:hover a::after
 {
     width: 50%;
     transform: translateX(-100%);
-}
-nav.sticky
-{
-    padding: 15px 100px;
-    background: #fff;
-}
-nav.sticky .logo
-{
-    color: #000;
-}
-nav.sticky ul li a
-{
-    color: #000;
-    font-weight: 900;
 }
